@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Pd7-C8-f8V">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Pd7-C8-f8V">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -36,7 +38,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bYz-Aw-64Q">
                                 <rect key="frame" x="20" y="648" width="374" height="152"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HiF-9g-xLf">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HiF-9g-xLf">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="44"/>
                                         <color key="backgroundColor" red="0.086274509799999996" green="0.74117647060000003" blue="0.72941176470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -55,13 +57,13 @@
                                                         <real key="value" value="38"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhoneXS">
-                                                        <real key="value" value="42"/>
+                                                        <integer key="value" value="50"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhoneXR">
-                                                        <real key="value" value="42"/>
+                                                        <integer key="value" value="50"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="iPhoneXMax">
-                                                        <real key="value" value="44"/>
+                                                        <integer key="value" value="50"/>
                                                     </userDefinedRuntimeAttribute>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="iPadMini">
                                                         <real key="value" value="48"/>
@@ -75,6 +77,18 @@
                                                     <userDefinedRuntimeAttribute type="number" keyPath="iPadPro12_9">
                                                         <real key="value" value="58"/>
                                                     </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhone11Pro">
+                                                        <real key="value" value="80"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhone11">
+                                                        <real key="value" value="80"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhone12Max">
+                                                        <real key="value" value="80"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="iPhone12">
+                                                        <real key="value" value="80"/>
+                                                    </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </constraint>
                                         </constraints>
@@ -83,7 +97,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OKD-Li-ted">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OKD-Li-ted">
                                         <rect key="frame" x="0.0" y="54" width="374" height="44"/>
                                         <color key="backgroundColor" red="0.086274509799999996" green="0.74117647060000003" blue="0.72941176470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -91,7 +105,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aog-r6-YG9">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aog-r6-YG9">
                                         <rect key="frame" x="0.0" y="108" width="374" height="44"/>
                                         <color key="backgroundColor" red="0.086274509799999996" green="0.74117647060000003" blue="0.72941176470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -109,6 +123,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="znV-yM-b1H"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="bYz-Aw-64Q" firstAttribute="leading" secondItem="znV-yM-b1H" secondAttribute="leading" constant="20" id="0AK-ff-qet"/>
@@ -120,7 +135,6 @@
                             <constraint firstItem="bYz-Aw-64Q" firstAttribute="top" secondItem="h7F-3n-H2W" secondAttribute="bottom" constant="10" id="ogU-tL-jDJ"/>
                             <constraint firstItem="UXP-yH-JTm" firstAttribute="top" secondItem="znV-yM-b1H" secondAttribute="top" constant="80" id="t6L-V0-XhP"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="znV-yM-b1H"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OJs-IS-uWu" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -142,7 +156,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="slI-7X-rcV"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="3pq-cy-hH8" firstAttribute="centerY" secondItem="Rnd-lT-e1w" secondAttribute="centerY" id="ghR-p7-HUB"/>
                             <constraint firstItem="3pq-cy-hH8" firstAttribute="centerX" secondItem="Rnd-lT-e1w" secondAttribute="centerX" id="j6k-0N-GWS" customClass="NSLayoutHelper" customModule="LayoutHelper" customModuleProvider="target">
@@ -165,7 +180,6 @@
                                 </userDefinedRuntimeAttributes>
                             </constraint>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="slI-7X-rcV"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="11f-rR-AEC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -175,5 +189,8 @@
     </scenes>
     <resources>
         <image name="background" width="507" height="592"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
