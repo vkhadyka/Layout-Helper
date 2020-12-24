@@ -5,14 +5,44 @@
 
 import UIKit
 enum UIDeviceSize  {
-    case i3_5Inch
+    //iPhone SE(1Gen)      568 2x 4''
     case i4Inch
+    
+    //iPhone SE(2Gen)      667 2x 4.7''
+    //iPhone 6             667 2x 4.7''
+    //iPhone 6s            667 2x 4.7''
+    //iPhone 7             667 2x 4.7''
+    //iPhone 8             667 2x 4.7''
     case i4_7Inch
+    
+    
+    //iPhone 12 mini       812 3x 5.4''
     case i5_4Inch
+    
+    //iPhone 6 Plus        736 3x 5.5''
+    //iPhone 6s Plus       736 3x 5.5''
+    //iPhone 7 Plus        736 3x 5.5''
+    //iPhone 8 Plus        736 3x 5.5''
     case i5_5Inch
+    
+    
+    //iPhone X             812 3x 5.8''
+    //iPhone XS            812 3x 5.8''
+    //iPhone 11 Pro        812 3x 5.8''
     case i5_8Inch
+    
+    //iPhone XR            896 2x 6.1''
+    //iPhone 11            896 2x 6.1''
+    //iPhone 12 Pro        844 3x 6.1''
+    //iPhone 12            844 3x 6.1''
     case i6_1Inch
+    
+    //iPhone 11 Pro Max    896 3x 6.5''
+    //iPhone XS Max        896 3x 6.5''
     case i6_5Inch
+    
+    
+    //iPhone 12 Pro Max    926 3x 6.7''
     case i6_7Inch
     case i7_9Inch
     case i9_7Inch
@@ -28,8 +58,6 @@ let deviceSize : UIDeviceSize = {
     let screenHeight: Double = max(w, h)
     
     switch screenHeight {
-    case 480:
-        return .i3_5Inch
     case 568:
         return .i4Inch
     case 667:
@@ -37,12 +65,17 @@ let deviceSize : UIDeviceSize = {
     case 736:
         return .i5_5Inch
     case 812:
-        return .i5_8Inch
+        switch UIDevice().type {
+        case .iPhone12Mini:
+            return .i5_4Inch
+        default:
+            return .i5_8Inch
+        }
     case 844:
         return .i6_1Inch
     case 896:
         switch UIDevice().type {
-        case .iPhoneXSMax:
+        case .iPhoneXSMax, .iPhone11ProMax:
             return .i6_5Inch
         default:
             return .i6_1Inch
@@ -118,11 +151,6 @@ public enum Model : String {
          iPadPro4_12_9      = "iPad Pro 4 12.9\"",
 
 //iPhone
-         iPhone4            = "iPhone 4",
-         iPhone4S           = "iPhone 4S",
-         iPhone5            = "iPhone 5",
-         iPhone5S           = "iPhone 5S",
-         iPhone5C           = "iPhone 5C",
          iPhone6            = "iPhone 6",
          iPhone6Plus        = "iPhone 6 Plus",
          iPhone6S           = "iPhone 6S",
@@ -265,16 +293,6 @@ public extension UIDevice {
             
             
             //iPhone
-            "iPhone3,1" : .iPhone4,
-            "iPhone3,2" : .iPhone4,
-            "iPhone3,3" : .iPhone4,
-            "iPhone4,1" : .iPhone4S,
-            "iPhone5,1" : .iPhone5,
-            "iPhone5,2" : .iPhone5,
-            "iPhone5,3" : .iPhone5C,
-            "iPhone5,4" : .iPhone5C,
-            "iPhone6,1" : .iPhone5S,
-            "iPhone6,2" : .iPhone5S,
             "iPhone7,1" : .iPhone6Plus,
             "iPhone7,2" : .iPhone6,
             "iPhone8,1" : .iPhone6S,
