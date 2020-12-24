@@ -9,6 +9,7 @@
 import UIKit
 
 @IBDesignable class UIButtonHelper : UIButton {
+    
     @IBInspectable var iPhoneSE: CGFloat = 0.0 {
         didSet { deviceFont(.i4Inch,value:iPhoneSE) }
     }
@@ -18,15 +19,22 @@ import UIKit
     @IBInspectable var iPhone8Plus: CGFloat = 0.0 {
         didSet { deviceFont(.i5_5Inch,value:iPhone8Plus) }
     }
+    
     @IBInspectable var iPhone11Pro: CGFloat = 0.0 {
         didSet { deviceFont(.i5_8Inch,value:iPhone11Pro) }
     }
-    @IBInspectable var iPhone11: CGFloat = 0.0 {
-        didSet { deviceFont(.i6_1Inch,value:iPhone11) }
+    
+    @IBInspectable var iPhone12Mini: CGFloat = 0.0 {
+        didSet { deviceFont(.i5_4Inch,value:iPhone12Mini) }
     }
-    @IBInspectable var iPhone11Max: CGFloat = 0.0 {
-        didSet { deviceFont(.i6_5Inch,value:iPhone11Max) }
+    
+    @IBInspectable var iPhone12: CGFloat = 0.0 {
+        didSet { deviceFont(.i6_1Inch,value:iPhone12) }
     }
+    @IBInspectable var iPhone12Max: CGFloat = 0.0 {
+        didSet { deviceFont(.i6_7Inch ,value:iPhone12Max) }
+    }
+    
     // Helpers
     open func deviceFont(_ device:UIDeviceSize,value:CGFloat) {
         if deviceSize == device {
