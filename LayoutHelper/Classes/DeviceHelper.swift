@@ -4,7 +4,7 @@
 //  Copyright © 2019 Kuldeep Tanwar. All rights reserved.
 
 import UIKit
-enum UIDeviceSize  {
+public enum UIDeviceSize  {
     //iPhone SE(1Gen)      568 2x 4''
     case i4Inch
     
