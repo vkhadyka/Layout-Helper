@@ -9,9 +9,6 @@
 import UIKit
 
 @IBDesignable class UILabelHelper : UILabel {
-        @IBInspectable var iPhone4s: CGFloat = 0.0 {
-        didSet { deviceFont(.i3_5Inch,value:iPhone4s) }
-    }
     @IBInspectable var iPhoneSE: CGFloat = 0.0 {
         didSet { deviceFont(.i4Inch,value:iPhoneSE) }
     }
