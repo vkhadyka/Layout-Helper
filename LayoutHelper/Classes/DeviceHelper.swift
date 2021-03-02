@@ -199,7 +199,7 @@ public enum Model : String {
 
 public extension UIDevice {
     
-    var type: Model {
+  public var type: Model {
         var systemInfo = utsname()
         uname(&systemInfo)
         let modelCode = withUnsafePointer(to: &systemInfo.machine) {
